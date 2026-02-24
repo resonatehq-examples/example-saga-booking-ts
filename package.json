@@ -1,0 +1,21 @@
+{
+  "name": "example-saga-booking-ts",
+  "version": "1.0.0",
+  "description": "Trip booking saga with automatic compensation — book flight, hotel, and car rental with rollback on failure",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "start:fail": "bun run src/index.ts --fail"
+  },
+  "dependencies": {
+    "@resonatehq/sdk": "^0.9.6"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
