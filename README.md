@@ -127,21 +127,6 @@ example-saga-booking-ts/
 
 **Lines of code**: ~200 total (including comments and blank lines), ~80 lines of actual logic. The `bookTrip` saga itself is 30 lines.
 
-## Comparison
-
-| | Resonate | Temporal | Restate |
-|---|---|---|---|
-| Core concept | Generator + try/catch | Workflow + Activities | Service + ctx.run |
-| Saga logic (LOC) | ~25 | ~80 | ~60 |
-| Total files | 3 source files | 6+ files (workflow, activities, worker, client, types, clients) | 4+ files |
-| Concepts to learn | generators, `yield*`, `ctx.run` | workflows, activities, workers, task queues, activity proxies | services, `ctx.run`, `TerminalError` |
-| Server required | No (embedded) | Yes (temporal server) | Yes (restate server) |
-
-The saga pattern maps naturally to generator functions. `try/catch` is the compensation boundary. `yield*` is the checkpoint boundary. No framework needed — just the language.
-
 ## Learn More
 
 - [Resonate documentation](https://docs.resonatehq.io)
-- [Saga pattern skill](../agent-cortex/profiles/developer/skills/resonate-saga-pattern-typescript-SKILL.md)
-- [Temporal saga example](https://github.com/temporalio/samples-typescript/tree/main/saga) — compare for yourself
-- [Restate saga example](https://github.com/restatedev/examples/tree/main/typescript/patterns-use-cases/src/sagas) — compare for yourself
