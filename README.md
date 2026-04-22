@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="Saga Booking — Resonate example" />
+</p>
+
 # Saga Pattern: Trip Booking
 
 A trip booking workflow that demonstrates the **saga pattern** with automatic compensation. Books a flight, hotel, and car rental — if the car rental fails, it automatically cancels the hotel and flight in reverse order.
